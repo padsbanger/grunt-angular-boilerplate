@@ -1,0 +1,52 @@
+{
+  "name": "grunt-angular-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerplate applicaiton in Angular.js using Grunt as task runner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/padsbanger/grunt-angular-boilerplate.git"
+  },
+  "keywords": [
+    "Grunt",
+    "Angular.js"
+  ],
+  "author": "Michal Lach",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/padsbanger/grunt-angular-boilerplate/issues"
+  },
+  "homepage": "https://github.com/padsbanger/grunt-angular-boilerplate",
+  "devDependencies": {
+    "grunt-concurrent": "^1.0.0",
+    "grunt-cli": "^0.1.13",
+    "grunt": "^0.4.5",
+    "less": "^2.5.0",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-mkdir": "^0.1.2",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-connect": "^0.10.1",
+    "load-grunt-tasks": "^3.1.0",
+    "grunt-newer": "^1.1.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-uglify": "^0.8.1",
+    "grunt-contrib-clean": "^0.6.0",
+    "time-grunt": "^1.1.0",
+    "grunt-karma": "^0.10.1",
+    "karma": "^0.12.31",
+    "karma-ng-html2js-preprocessor": "^0.1.2",
+    "karma-script-launcher": "^0.1.0",
+    "jasmine-reporters": "^2.0.5",
+    "karma-junit-reporter": "^0.2.2",
+    "grunt-contrib-copy": "^0.8.0",
+    "jasmine-core": "^2.2.0",
+    "karma-jasmine": "^0.3.5",
+    "matchdep": "^0.3.0",
+    "karma-coverage": "^0.2.7",
+    "karma-phantomjs-launcher": "^0.1.4"
+  }
+}
