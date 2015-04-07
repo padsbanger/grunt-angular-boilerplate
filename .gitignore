@@ -33,6 +33,12 @@ bower_components
 .bower-registry
 libs
 lib
+test-coverage
 
 # OS X stuff
 .DS_Store
+
+# build files
+
+js/build/
+styles/css/
