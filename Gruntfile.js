@@ -17,12 +17,12 @@ module.exports = function(grunt) {
       }
     },
 
-    clean: ['lib', 'js/build/', '.bower-cache'],
+    clean: ['js/build/'],
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       styles: {
-        files: ['styles/less/*.less', 'styles/less/*/*.less'],
+        files: ['styles/less/*.less', 'styles/less/**/*.less'],
         tasks: ['less'],
         options: {
           livereload: {
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
         },
       },
       directives: {
-        files: ['js/src/directives/*.js', 'js/src/directives/*/*.js'],
+        files: ['js/src/directives/*.js'],
         tasks: ['concat:directives'],
         options: {
           livereload: {
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
         },
       },
       html: {
-        files: ['*.html', 'views/*/*.html', 'views/*.html'],
+        files: ['*.html', 'views/**/*.html',],
         options: {
           livereload: {
             port: 9000
@@ -77,22 +77,13 @@ module.exports = function(grunt) {
     },
 
     // The actual grunt server settings
-
     connect: {
       server: {
         options: {
-          port: 1338,
+          port: 1337,
           hostname: '',
           livereload: 9000,
-          open: true,
-          middleware: function(connect, options) {
-            var proxy = require('grunt-connect-proxy/lib/utils').proxyRequest;
-            return [
-              proxy,
-              connect.static(options.base),
-              connect.directory(options.base)
-            ];
-          }
+          open: true
         }
       }
     },
@@ -103,7 +94,7 @@ module.exports = function(grunt) {
           paths: ['styles/less/*/']
         },
         files: {
-          'styles/css/style.css': 'styles/less/style.less',
+          'styles/css/styles.css': 'styles/less/styles.less',
         }
       }
     },
@@ -114,6 +105,8 @@ module.exports = function(grunt) {
       },
       libs: {
         src: [
+        'libs/angular/angular.js',
+        'libs/angular-route/angular-route.js'
         ],
         dest: 'js/build/libs.js'
       },
@@ -139,8 +132,7 @@ module.exports = function(grunt) {
           'js/build/controllers.js',
           'js/build/directives.js',
           'js/build/filters.js',
-          'js/build/services.js',
-          'js/build/modules.js'
+          'js/build/services.js'
         ],
         dest: 'js/build/app.min.js'
       }
@@ -184,7 +176,6 @@ module.exports = function(grunt) {
       'concat:controllers',
       'concat:services',
       'concat:filters',
-      'concat:modules',
       'concat:build',
       'uglify:build',
 
@@ -201,7 +192,6 @@ module.exports = function(grunt) {
       'concat:controllers',
       'concat:services',
       'concat:filters',
-      'concat:modules',
       'less',
       'connect:server',
       'watch'

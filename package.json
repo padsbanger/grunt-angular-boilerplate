@@ -23,7 +23,6 @@
   "devDependencies": {
     "grunt-concurrent": "^1.0.0",
     "grunt-cli": "^0.1.13",
-    "grunt": "^0.4.5",
     "less": "^2.5.0",
     "grunt-bower-task": "^0.4.0",
     "grunt-mkdir": "^0.1.2",
