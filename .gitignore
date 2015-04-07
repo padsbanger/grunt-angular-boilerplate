@@ -31,3 +31,5 @@ bower_components
 .bower-cache
 .bower-temp
 .bower-registry
+libs
+lib
