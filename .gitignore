@@ -33,3 +33,6 @@ bower_components
 .bower-registry
 libs
 lib
+
+# OS X stuff
+.DS_Store

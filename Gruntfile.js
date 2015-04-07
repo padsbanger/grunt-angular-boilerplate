@@ -17,7 +17,7 @@ module.exports = function(grunt) {
       }
     },
 
-    clean: ['js/build/'],
+    clean: ['js/build/', 'libs', 'lib'],
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
