@@ -67,7 +67,7 @@ module.exports = function(grunt) {
         },
       },
       html: {
-        files: ['*.html', 'views/**/*.html',],
+        files: ['*.html', 'views/**/*.html', ],
         options: {
           livereload: {
             port: 9000
@@ -105,8 +105,8 @@ module.exports = function(grunt) {
       },
       libs: {
         src: [
-        'libs/angular/angular.js',
-        'libs/angular-route/angular-route.js'
+          'libs/angular/angular.js',
+          'libs/angular-route/angular-route.js'
         ],
         dest: 'js/build/libs.js'
       },
@@ -147,6 +147,16 @@ module.exports = function(grunt) {
       }
     },
 
+    coveralls: {
+      options: {
+        debug: true,
+        coverage_dir: 'test-coverage',
+        dryRun: false,
+        force: true,
+        recursive: true
+      }
+    },
+
     // Test settings
     karma: {
       unit: {
@@ -178,6 +188,8 @@ module.exports = function(grunt) {
       'concat:filters',
       'concat:build',
       'uglify:build',
+      'karma:unit',
+      'coveralls'
 
     ]);
   });

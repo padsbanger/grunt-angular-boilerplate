@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Boilerplate applicaiton in Angular.js using Grunt as task runner",
   "main": "index.js",
+  "scripts": {
+    "test": "grunt build"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/padsbanger/grunt-angular-boilerplate.git"
@@ -43,6 +46,7 @@
     "karma-jasmine": "^0.3.5",
     "matchdep": "^0.3.0",
     "karma-coverage": "^0.2.7",
-    "karma-phantomjs-launcher": "^0.1.4"
+    "karma-phantomjs-launcher": "^0.1.4",
+    "grunt-coveralls": "^1.0.0"
   }
 }
