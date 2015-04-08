@@ -47,6 +47,6 @@
     "matchdep": "^0.3.0",
     "karma-coverage": "^0.2.7",
     "karma-phantomjs-launcher": "^0.1.4",
-    "grunt-coveralls": "^1.0.0"
+    "grunt-karma-coveralls": "^2.5.2"
   }
 }
