@@ -12,7 +12,7 @@ module.exports = function(grunt) {
     bower: {
       install: {
         targetDir: 'libs',
-        cleanBowerDir: true,
+        verbose: true,
         cleanup: true
       }
     },
@@ -196,9 +196,9 @@ module.exports = function(grunt) {
 
   grunt.registerTask('serve', function() {
     grunt.task.run([
+      'clean',
       'mkdir:js',
       'bower:install',
-      'clean',
       'concat:libs',
       'concat:directives',
       'concat:controllers',
