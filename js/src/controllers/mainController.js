@@ -1,5 +1,6 @@
 'use strict';
 
-app.controller('mainController', ['$scope', function($scope) {
-  $scope.test = 1;
+app.controller('mainController', ['$scope', 'DataService', function($scope, DataService) {
+
+  $scope.data = DataService.getData();
 }]);
