@@ -16,7 +16,7 @@ describe('Main controller', function() {
   }));
 
   it('should use correct route controller', function() {
-    expect(scope.test).toBe(1);
+    expect(scope.data.length).toBe(5);
 
   });
 });
