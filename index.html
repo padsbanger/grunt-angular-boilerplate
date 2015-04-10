@@ -5,12 +5,26 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=9">
   <title>Grunt Angular Boilerplate</title>
-    <meta content="maximum-scale=1.0, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="styles/css/styles.css">
+  <meta content="maximum-scale=1.0, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="styles/css/styles.css">
 </head>
 
 <body>
-  <main ng-view></main>
+  <div class="container" ng-controller="mainController">
+    <div class="header clearfix">
+      <nav>
+        <ul class="nav nav-pills pull-right">
+          <li role="presentation"><a href="/#/">Home</a></li>
+          <li role="presentation"><a href="/#/examples">Examples</a></li>
+        </ul>
+      </nav>
+      <h3 class="text-muted">Grunt.js & Angular.js Boilerplate</h3>
+    </div>
+    <main ng-view></main>
+    <footer class="footer">
+      <p>© Created by <em>Michał Lach</em> 2015</p>
+    </footer>
+  </div>
   <script src="js/build/libs.js"></script>
   <script src="js/src/app.js"></script>
   <script src="js/build/controllers.js"></script>
