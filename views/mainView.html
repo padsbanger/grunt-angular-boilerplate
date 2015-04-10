@@ -10,15 +10,14 @@
     <h3 class="text-muted">Grunt.js & Angular.js Boilerplate</h3>
   </div>
   <div class="jumbotron">
-    <h1>Jumbotron heading</h1>
-    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-    <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+    <h1>Hello !</h1>
+    <div my-customer></div>
+    <p class="lead">This is just an example application with Angular.js sugar added.</p>
+    <p><a class="btn btn-lg btn-success" bg-change role="button">Click me !</a></p>
   </div>
   <div class="row marketing">
     <div class="col-lg-6" ng-repeat="data in data track by $index">
-      <h4>{{data.name}}</h4>
-      <h5>{{data.alliance}}</h5>
-      <p>Joined on {{data.date}} and is {{data.status | CapitalizeFirstLetter}}</p>
+    <user-widget data=data></user-widget>
     </div>
   </div>
   <footer class="footer">

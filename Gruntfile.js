@@ -190,7 +190,6 @@ module.exports = function(grunt) {
       'uglify:build',
       'karma:unit',
       'coveralls'
-
     ]);
   });
 

@@ -10,12 +10,14 @@ module.exports = function(config) {
       'libs/angular/angular.js',
       'libs/angular-route/angular-route.js',
       'libs/lodash/lodash.js',
+      'views/**/*.html',
       'libs/angular-mocks/angular-mocks.js',
       'js/src/**/*.js',
       'tests/**/*.js'
     ],
 
     preprocessors: {
+      'views/**/*.html': ['html2js'],
       'js/src/**/*.js': 'coverage'
     },
 
