@@ -1,7 +1,7 @@
 {
   "name": "grunt-angular-boilerplate",
-  "version": "0.0.1",
-  "description": "Boilerplate applicaiton in Angular.js using Grunt as task runner",
+  "version": "1.0.0",
+  "description": "Boilerplate application in Angular.js using Grunt as task runner",
   "main": "index.js",
   "scripts": {
     "test": "grunt build"
