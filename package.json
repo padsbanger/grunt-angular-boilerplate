@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/padsbanger/grunt-angular-boilerplate",
   "devDependencies": {
+    "grunt": "^0.4.1",
     "grunt-concurrent": "^1.0.0",
     "grunt-cli": "^0.1.13",
     "less": "^2.5.0",
