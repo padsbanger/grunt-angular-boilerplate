@@ -12,7 +12,10 @@
   },
   "keywords": [
     "Grunt",
-    "Angular.js"
+    "Angular.js",
+    "angular",
+    "boilerplate",
+    "less"
   ],
   "author": "Michal Lach",
   "license": "MIT",
